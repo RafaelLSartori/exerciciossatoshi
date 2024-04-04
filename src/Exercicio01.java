@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Exercicio1 {
+public class Exercicio01 {
 
     public static void main(String[] args) {
         // 1.Coletar o valor do lado de um quadrado, calcular sua área e apresentar o resultado.

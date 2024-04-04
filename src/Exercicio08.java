@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Exercicio8 {
+public class Exercicio08 {
 
     public static void main(String[] args) {
 
