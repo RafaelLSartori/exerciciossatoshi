@@ -1,5 +1,5 @@
     import javax.swing.JOptionPane;
-    public class MetodoPrincipal {
+    public class Escolha_Caso {
         public static void main (String arg [ ]) {
             int opc = 0;
             int vetor[ ] = new int[4];
