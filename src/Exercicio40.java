@@ -1,33 +1,33 @@
-import javax.swing.*;
 
+import javax.swing.JOptionPane;
 public class Exercicio40 {
-    public static void main(String[] args){
 
-        //Receba 2 nÃºmeros inteiros. Verifique e mostre todos os nÃºmeros primos existentes entre eles.
+	public static void main(String[] args) {
+		//Receba 2 números inteiros. Verifique e mostre todos os números primos existentes entre eles.
 
         int num1, num2, primo;
 
-        num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro nÃºmero: "));
-        num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo nÃºmero: "));
+        num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número: "));
+        num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número: "));
 
         if (num1 < num2){
-            for (int cta = (num1+1); cta <= (num2-1); cta++){
-                if (cta % cta == 0 && cta % 1 == 0){
-                    primo = cta;
-                    System.out.println(primo);
+            for (int i = (num1+1); i <= (num2-1); i++){
+                if ((i % i == 0) && (i % 1 == 0) && (i % 2 !=0)){
+                    System.out.println(i);
                 }
             }
         }
         else if(num2 < num1){
-            for (int cta = (num2+1); cta <= (num1-1); cta++){
-                if (cta % cta == 0 && cta % 1 == 0){
-                    primo = cta;
-                    System.out.println(primo);
+            for (int i = (num2+1); i <= (num1-1); i++){
+                if ((i % i == 0) && (i % 1 == 0) && (i % 2 !=0)){
+                    System.out.println(i);
                 }
             }
         }
         else{
-            JOptionPane.showMessageDialog(null,"Os nÃºmeros nÃ£o podem ser iguais.");
+            JOptionPane.showMessageDialog(null,"Os números não podem ser iguais.");
         }
-    }
+
+	}
+
 }
